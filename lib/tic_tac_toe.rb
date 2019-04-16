@@ -106,7 +106,10 @@ def full?(board)
 
 end
 
-
+# Check for draw in game
+def draw?(board)
+  return full?(board) && !won?(board)
+end
 
 
 
