@@ -135,17 +135,11 @@ def play(board)
     turn(board)
   end
    
-  
-  
-  
   if winner(board) != nil
     puts "Congratulations #{winner(board)}!"
   else
-    tell the players it has been a draw
+    puts "It's a draw!"
   end 
-  
-  
-  
   
 end
 
