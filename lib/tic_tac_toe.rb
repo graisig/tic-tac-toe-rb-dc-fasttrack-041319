@@ -138,7 +138,7 @@ def play(board)
     turn(board)
   end
    
-  if the game was won
+  if won?(board)
     congratulate the winner
   else if the game was a draw
     tell the players it has been a draw
