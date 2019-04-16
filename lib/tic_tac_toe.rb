@@ -131,7 +131,7 @@ end
 # Game play wethod
 def play(board)
   
-  until !over?(board)
+  until over?(board)
     turn(board)
   end
    
