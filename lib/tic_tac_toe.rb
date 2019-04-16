@@ -82,7 +82,21 @@ def current_player(board)
 
 end
 
+# Check if there is a winning combination on the board
+def won?(board)
+  WIN_COMBINATIONS.detect do |win_combination|
 
+    # check each win combination for win
+    win_X = win_combination.all? {|cell| board[cell] == "X"}
+    win_O = win_combination.all? {|cell| board[cell] == "O"}
+
+    if win_X or win_O
+      return win_combination
+    else
+      false
+    end
+  end
+end
 
 
 
