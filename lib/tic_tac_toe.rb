@@ -131,15 +131,11 @@ end
 # Game play wethod
 def play(board)
   
-  turn_num = 1
-  while turn_num <= 9
-    turn(board)
-      turn_num += 1
-  end
+
   
   
   until !over?(board)
-    take turns
+    turn(board)
   end
    
   if the game was won
