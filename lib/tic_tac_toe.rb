@@ -116,12 +116,19 @@ def over?(board)
   return won?(board) || draw?(board) || full?(board)
 end
 
+# Find winner of game
+def winner(board)
+  
+  win_combination = won?(board)
+  if win_combination.is_a? Array
+    return board[win_combination[0]]
+  else
+    return nil
+  end
+  
+end
 
-
-
-
-
-# Define your play method below
+# Game play wethod
 def play(board)
   
   turn_num = 1
