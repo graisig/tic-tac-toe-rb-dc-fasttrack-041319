@@ -131,16 +131,15 @@ end
 # Game play wethod
 def play(board)
   
-
-  
-  
   until !over?(board)
     turn(board)
   end
    
+   
+   
   if won?(board)
     congratulate the winner
-  else if the game was a draw
+  else
     tell the players it has been a draw
   end 
   
