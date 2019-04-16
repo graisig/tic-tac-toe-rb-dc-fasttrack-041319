@@ -138,7 +138,7 @@ def play(board)
   end
   
   
-  until the game is over
+  until !over?(board)
     take turns
   end
    
