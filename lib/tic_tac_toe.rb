@@ -98,7 +98,13 @@ def won?(board)
   end
 end
 
+# Check to see if board is full
+def full?(board)
 
+  full_board = [0,1,2,3,4,5,6,7,8].all? {|index| position_taken?(board, index)}
+  return full_board
+
+end
 
 
 
