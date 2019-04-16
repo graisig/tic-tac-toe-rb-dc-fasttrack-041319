@@ -111,7 +111,10 @@ def draw?(board)
   return full?(board) && !won?(board)
 end
 
-
+# Check to see if game is over by a win or a draw
+def over?(board)
+  return won?(board) || draw?(board) || full?(board)
+end
 
 
 
@@ -155,4 +158,3 @@ def winner(board)
   end
   
 end
-puts winner(board)
