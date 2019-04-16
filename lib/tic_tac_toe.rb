@@ -56,6 +56,20 @@ def turn(board)
   end
 end
 
+# Find number of completed turns
+def turn_count(board)
+
+  count = 0
+  board.each do |cell|
+    if cell == "X" || cell == "O"
+      count += 1
+    end
+  end
+  
+  return count
+end
+
+
 
 
 
@@ -84,10 +98,11 @@ def current_player(board)
   else
     return "O"
   end
-  
-#  turn = num_turns % 2 == 0 ? "X" : "O"
- # return turn
+
 end
+
+
+
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
