@@ -40,12 +40,7 @@ def valid_move?(board, index)
   return index.between?(0,8) && !position_taken?(board, index)
 end
 
-
-
-
-
-
-
+# Complete a single player's turn
 def turn(board)
   
   current_player = current_player(board)
@@ -60,6 +55,10 @@ def turn(board)
     turn(board)
   end
 end
+
+
+
+
 
 # Define your play method below
 def play(board)
