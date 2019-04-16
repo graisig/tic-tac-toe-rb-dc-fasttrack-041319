@@ -30,18 +30,21 @@ def move(board, index, current_player)
   board[index] = current_player
 end
 
-
-
-
-
-
+# Checks to see if inputted position is already taken
 def position_taken?(board, location)
   return board[location] != " " && board[location] != ""
 end
 
+# Verifies that inputted move is valid
 def valid_move?(board, index)
   return index.between?(0,8) && !position_taken?(board, index)
 end
+
+
+
+
+
+
 
 def turn(board)
   
