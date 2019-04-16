@@ -20,20 +20,20 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-
-
-
-
-
-
-
+# Converts user input to board index
 def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+# Updates board with current move
 def move(board, index, current_player)
   board[index] = current_player
 end
+
+
+
+
+
 
 def position_taken?(board, location)
   return board[location] != " " && board[location] != ""
