@@ -69,7 +69,18 @@ def turn_count(board)
   return count
 end
 
+# Determine whose turn it is
+def current_player(board)
+  
+  num_turns = turn_count(board)
+  
+  if num_turns % 2 == 0
+    return "X"
+  else
+    return "O"
+  end
 
+end
 
 
 
