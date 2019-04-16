@@ -135,10 +135,11 @@ def play(board)
     turn(board)
   end
    
-   
-   
-  if won?(board)
-    congratulate the winner
+  
+  
+  
+  if winner(board) != nil
+    puts "Congratulations #{winner(board)}!"
   else
     tell the players it has been a draw
   end 
